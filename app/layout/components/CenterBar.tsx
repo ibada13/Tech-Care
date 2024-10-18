@@ -5,7 +5,7 @@ export default function CenterBar() {
     return (
         <div className="flex flex-col bg-white w-1/2">
             <p className="font-bold ">Diagnostic</p>
-            <Chart Patient={patients[3]}/>
+            <Chart diagnosis_history={patients[4].diagnosis_history}/>
         </div>
     )
 }

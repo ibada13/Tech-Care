@@ -13,7 +13,7 @@ export interface patient	{
 		"lab_results":string[]
 	}
 
-interface diagnosis_history {
+export interface diagnosis_history {
 		"month": string,
 		"year": number,
 		"blood_pressure": {
