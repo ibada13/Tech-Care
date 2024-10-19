@@ -15,7 +15,11 @@ const config: Config = {
         sg: "#01F0D0",
         sw: "#C8CCD41A",
         swg:"#D8FCF7",  
+        charbackground:"#F4F0FE",
       },
+      fontSize: {
+        xss:"0.6rem"
+      }
     },
   },
   plugins: [],

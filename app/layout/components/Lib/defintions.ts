@@ -19,11 +19,11 @@ export interface diagnosis_history {
 		"blood_pressure": {
 			"systolic": {
 				"value": number,
-				"levels": string
+				"levels": "Normal"|"Higher than Average"|"Lower than Average"
 			},
 			"diastolic": {
 				"value": number,
-				"levels": string,
+				"levels": "Normal"|"Higher than Average"|"Lower than Average"
 			}
 		},
 		"heart_rate": {
