@@ -40,7 +40,7 @@ export interface diagnosis_history {
 		}
 	}
 
-	interface diagnostic_list 			{
+	export interface diagnostic_list 			{
 		"name": string,
 		"description": string,
 		"status": string
