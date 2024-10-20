@@ -3,7 +3,7 @@ import { CgGenderFemale,CgGenderMale } from "react-icons/cg";
 import { CiCalendar } from "react-icons/ci";
 import { BsTelephone } from "react-icons/bs";
 import Image from "next/image";
-
+import { convertDate } from "../functions";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 export default function PatientCard({ patient }: {patient:patient}) { 
     return (
@@ -22,7 +22,7 @@ export default function PatientCard({ patient }: {patient:patient}) {
                 </div>
                 <div className="flex flex-col justify-between">
                     <p className="font-thin text-xs">Date of Birth</p>
-                    <p className="font-semibold text-xs">{patient.date_of_birth }</p>
+                    <p className="font-semibold text-xs">{convertDate(patient.date_of_birth )}</p>
                 </div>
 
             </div>
