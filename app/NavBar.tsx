@@ -1,11 +1,11 @@
-import logo from './components/assets/TestLogo.svg'
+import logo from './[id]/layout/components/assets/TestLogo.svg'
 import Image from 'next/image'
 import { MdOutlineHome } from "react-icons/md";
 import { IoPeople } from "react-icons/io5";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 import { FaRegCreditCard } from "react-icons/fa";
 import { TiMessage } from "react-icons/ti";
-import drpic from './components/assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png'
+import drpic from './[id]/layout/components/assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png'
 import { IoMdSettings } from "react-icons/io";
 import { BsThreeDotsVertical } from "react-icons/bs";
 const NavBar = () => { 
@@ -14,7 +14,7 @@ const NavBar = () => {
     return (
         <div className="h-1/6 w-full flex justify-between items-center p-3 bg-white text-xs" >
             <Image src={logo} alt='logo' className='w-[10%]' />
-            <div className='flex justify-between gap-x-2'>
+            <div className='flex justify-between gap-x-2 font-bold text-sm'>
 
             <p className='flex gap-x-1 items-center rounded-lg p-2 bg-sg'><MdOutlineHome size={15}/>Overview</p>
             <p className='flex gap-x-1 items-center rounded-lg p-2 '><IoPeople size={15}/>Patients</p>

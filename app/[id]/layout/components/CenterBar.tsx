@@ -6,7 +6,7 @@ export default function CenterBar({ patient}:{patient:patient}) {
     return (
         <div className="flex flex-col w-1/2 gap-y-4">
 
-        <div className="flex flex-col bg-white w-full juss p-2 rounded-md">
+        <div className="flex flex-col bg-white w-full juss p-2 rounded-lg">
             <p className="font-bold ">Diagnostic</p>
             <div className="h-screen flex flex-col justify-around bg-white ">
 

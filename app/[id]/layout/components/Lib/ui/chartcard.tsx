@@ -14,12 +14,16 @@ export default function ChartCard({ diagnosis_history }: { diagnosis_history: di
       <div className="h-1/2 flex p-2 bg-charbackground">
       <div className="flex flex-grow h-full  gap-x-1">
         <div className="w-3/4 h-full flex flex-col gap-y-2 p-2">
+          <div className="flex justify-between items-center">
+
+          <p className=" font-bold self-start text-lg">Blood Pressure</p>
         <select className="text-xs self-end bg-charbackground" id="rangeSelect" value={range} onChange={handleRangeChange}>
           <option value={3}>Last 3 mounth</option>
           <option value={6}>Last 6 mounth</option>
           <option value={12}>Last 1 year</option>
           <option value={diagnosis_history.length}>All</option>
       </select>
+          </div>
           <Chart range={range} diagnosis_history={ diagnosis_history} />
         </div>
         <div className="w-1/4 flex-grow flex flex-col   h-1/2 ">
