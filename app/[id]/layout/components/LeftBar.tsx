@@ -1,5 +1,5 @@
 
-import { patients } from "./Lib/data";
+import Link from "next/link";
 import { patient } from "./Lib/defintions";
 import PatientForList from "./Lib/ui/patientsforlist";
 import { IoSearch } from "react-icons/io5";
@@ -13,10 +13,10 @@ const LeftBar = ({ patients ,selected }: {patients:patient[] , selected:number }
             <div className="overflow-y-auto overflow-x-hidden">
 
             {patients.map((patient, index) => (
-                <div className={`${index === selected ? "bg-swg":null}`}>
+                <Link href={ `/${index}`} className={`${index === selected ? "bg-swg":null}`}>
 
                 <PatientForList Patient={patient} key={`p-${index}`} />
-                </div>
+                </Link>
             ))}
             </div>
         </div>

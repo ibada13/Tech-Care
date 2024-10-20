@@ -1,9 +1,8 @@
 import { patient } from "./Lib/defintions";
 import ChartCard from "./Lib/ui/chartcard";
-import { patients } from "./Lib/data";
 import HealthCard from "./Lib/ui/healthcard";
 import DiagnosisList from "./Lib/ui/diagnosisList";
-export default function CenterBar() { 
+export default function CenterBar({ patient}:{patient:patient}) { 
     return (
         <div className="flex flex-col w-1/2 gap-y-4">
 
@@ -11,11 +10,11 @@ export default function CenterBar() {
             <p className="font-bold ">Diagnostic</p>
             <div className="h-screen flex flex-col justify-around bg-white ">
 
-            <ChartCard diagnosis_history={patients[3].diagnosis_history}/>
-            <HealthCard diagnosis_history={ patients[3].diagnosis_history[0]} />
+            <ChartCard diagnosis_history={patient.diagnosis_history}/>
+            <HealthCard diagnosis_history={ patient.diagnosis_history[0]} />
             </div>
             </div>
-            <DiagnosisList diagnostic_list={patients[3].diagnostic_list}/>
+            <DiagnosisList diagnostic_list={patient.diagnostic_list}/>
         </div>
     )
 }
