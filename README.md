@@ -17,8 +17,8 @@ TechCare is a modern healthcare management system built with Next.js and Tailwin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ibada13/indie-brew.git
-   cd indie-brew
+   git clone https://github.com/ibada13/Tech-Care
+   cd Tech-Care
    ```
 
 2. Install dependencies using pnpm:
