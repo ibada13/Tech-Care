@@ -1,14 +1,13 @@
 import { diagnosis_history } from "../defintions";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
-import { IoIosSquare } from "react-icons/io";
-import { useState } from "react";
+import React, { useState } from "react";
 import Chart from "./chart";
 
 export default function ChartCard({ diagnosis_history }: { diagnosis_history: diagnosis_history[] }) {
   const [range, Setrange] = useState<number>(12);
-  const handleRangeChange = (event:any) => { 
-    Setrange(event.target.value)
+  const handleRangeChange = (event:React.ChangeEvent<HTMLSelectElement>) => { 
+    Setrange(Number(event.target.value))
   }
   return (
       <div className="h-1/2 flex p-2 bg-charbackground">

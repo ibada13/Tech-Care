@@ -1,15 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    
-        images: {
-            remotePatterns: [
-              {
-                protocol: 'https',
-                hostname: 'fedskillstest.ct.digital',
-                port: '', // Leave empty for default
-                pathname: '/**', // Allows all paths under this domain
-              },  ]    
-      },
+  images: {
+      unoptimized: true,
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'fedskillstest.ct.digital',
+          pathname: '/**',
+        },
+      ]    
+  },
+  experimental: {
+      optimizeCss: true, 
+  },
 };
 
 export default nextConfig;

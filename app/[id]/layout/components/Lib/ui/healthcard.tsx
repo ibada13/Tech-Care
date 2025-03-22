@@ -6,7 +6,6 @@ import Image from 'next/image'
 import {diagnosis_history} from '../defintions'
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoMdArrowDropup } from "react-icons/io";
-import { IoIosSquare } from "react-icons/io";
 const HealthCard = ({diagnosis_history }: {diagnosis_history:diagnosis_history}) => { 
     return (
         <div className="flex justify-around h-1/3 gap-x-2 ">
